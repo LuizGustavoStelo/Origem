@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Origem MS - Cultura</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#775a19",
+                      "surface-dim": "#131314",
+                      "on-secondary": "#5b1a00",
+                      "old-gold": "#C5A059",
+                      "error-container": "#93000a",
+                      "outline-variant": "#4e4639",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed": "#d3e8d5",
+                      "surface-container-high": "#2a2a2b",
+                      "on-tertiary-container": "#2d4032",
+                      "on-surface-variant": "#d1c5b4",
+                      "tertiary-fixed-dim": "#b7ccb9",
+                      "clay-terracotta": "#B35A38",
+                      "primary-container": "#c5a059",
+                      "tertiary": "#b7ccb9",
+                      "inverse-surface": "#e5e2e3",
+                      "on-tertiary-fixed-variant": "#394b3d",
+                      "inverse-on-surface": "#303031",
+                      "surface-container-highest": "#353436",
+                      "on-secondary-fixed": "#380d00",
+                      "surface-container-low": "#1b1b1c",
+                      "primary-fixed": "#ffdea5",
+                      "surface-container-lowest": "#0e0e0f",
+                      "on-background": "#e5e2e3",
+                      "secondary-fixed": "#ffdbcf",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "surface-variant": "#353436",
+                      "olive-closed": "#4A5D4E",
+                      "error": "#ffb4ab",
+                      "paper-cream": "#F4F1EA",
+                      "surface-container": "#1f1f20",
+                      "surface": "#131314",
+                      "on-tertiary": "#233427",
+                      "surface-bright": "#39393a",
+                      "on-primary-container": "#4e3700",
+                      "on-secondary-fixed-variant": "#7a2f10",
+                      "surface-tint": "#e9c176",
+                      "on-error": "#690005",
+                      "on-primary": "#412d00",
+                      "on-tertiary-fixed": "#0e1f13",
+                      "outline": "#9a8f80",
+                      "primary": "#e9c176",
+                      "secondary-container": "#7a2f10",
+                      "on-primary-fixed": "#261900",
+                      "tertiary-container": "#96ab99",
+                      "on-secondary-container": "#ff9b77",
+                      "primary-fixed-dim": "#e9c176",
+                      "background": "#131314",
+                      "secondary": "#ffb59b",
+                      "secondary-fixed-dim": "#ffb59b",
+                      "on-surface": "#e5e2e3",
+                      "graphite-deep": "#1A1A1B"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-xl": "120px",
+                      "margin-desktop": "64px",
+                      "stack-lg": "80px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["EB Garamond"],
+                      "display-lg-mobile": ["EB Garamond"],
+                      "headline-md": ["EB Garamond"],
+                      "display-lg": ["EB Garamond"],
+                      "label-caps": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Hide scrollbar for horizontal scroll areas */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden selection:bg-old-gold selection:text-graphite-deep">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-md border-b border-old-gold/30 transition-all duration-200">
+<div class="flex items-center gap-4">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase tracking-tighter">Origem MS</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/gastronomia">Gastronomia</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300 opacity-80" href="/cultura">Cultura</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/turismo">Turismo</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/a-rota">A Rota</a>
+</div>
+<button class="text-primary hover:text-old-gold transition-colors duration-300 flex items-center justify-center p-2">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-screen flex items-end pb-stack-lg md:pb-stack-xl px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat" data-alt="A highly detailed, cinematic editorial photograph of an indigenous artisan from Mato Grosso do Sul, their hands weathered and covered in wet terracotta clay, shaping a traditional ceramic vessel. The lighting is moody and high-contrast, reminiscent of a luxury editorial magazine, with deep graphite shadows and a warm, golden rim light accentuating the texture of the clay and the artisan's focused expression. The background is plunged into deep shadow, emphasizing the raw, tactile creation process in a minimalist, sophisticated composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWgnClbc7X2G3qO9kgtjVhpVjgGmVBmyMVkfDgww-hBIb9quuP-D95AhQpBm2JmV-jXzhdi-tmYeLwTAyEiI3n7keuYwCua6LC6p4bMdmluXyhY0fCfppB-yzPaKDzBNkv_NcCRZFlB4ZcBBZYXstfuBKGLQBHxjlxcFnNs-BMroVUjjs1uHrr5uVmcADcbY2yGQE7SozC4597CnQGWM6gu6xLUghGWhR0vkXrQc-adSvjbBgvsbFlNOGRQIUIaQpg609-CilzLRg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-graphite-deep/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-6">
+<span class="font-label-caps text-label-caps text-old-gold uppercase mb-6 block tracking-[0.2em]">Herança do Território</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 leading-tight">A Alma do <br/> Mato Grosso do Sul</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Uma jornada editorial profunda pelas raízes, texturas e ritmos que forjam a identidade de uma terra onde o Pantanal encontra o Cerrado.</p>
+</div>
+</div>
+</section>
+<!-- Artesanato Ancestral -->
+<section class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-lg">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Artesanato Ancestral</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">O barro e a fibra como testemunhas do tempo. Peças únicas que traduzem a observação minuciosa da fauna e a sabedoria passada por gerações.</p>
+</div>
+<button class="mt-8 md:mt-0 px-6 py-3 border border-old-gold/30 text-old-gold font-label-caps text-label-caps uppercase tracking-widest hover:bg-old-gold hover:text-graphite-deep transition-all duration-300">Descobrir Ateliês</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 relative group overflow-hidden">
+<div class="w-full h-[600px] bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close-up editorial macro photography of intricate indigenous weaving from Mato Grosso do Sul. The image highlights the rough, organic texture of natural fibers dyed in subtle earth tones, predominantly terracotta and olive. The lighting is harsh and direct from the side, creating deep, dramatic shadows that emphasize the meticulous over-and-under pattern of the weave. The overall aesthetic is raw, minimalist, and highly sophisticated, capturing the essence of traditional craftsmanship in a modern luxury context." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAblgLvJPM2NZyOE4p2kvQ9ezy-1TUcpBLcVMvrvv42JzFAo7B46M255Id-qwCiWTiwNI1z9_wnhV_JBy_6U-_HRaHYviqBGbTpzPborZGGVESlU1XPDcyPzFXdG3_gcT8Btpuispg4SHGcGmjO9V_cUp301gYz-7fTST_mWkKZUKPGQjoc4gNREvFDxIKeUF7PhIojhPnGZJlCKCbf7c-7G5ejybtxoseG1a3xRpcFtCymcBlixMUf3zVGeOpRWaU-DDQGERIv7O4')"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-graphite-deep to-transparent">
+<span class="font-label-caps text-label-caps text-primary uppercase block mb-2">Tear e Fibra</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tramas da Planície</h3>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<div class="relative group overflow-hidden bg-surface-dim h-[288px]">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" data-alt="A minimalist still-life photograph of a single, beautifully imperfect terracotta ceramic pot from the Kadiwéu people. The pot features striking, intricate geometric patterns painted in black and deep red clay slips. It sits alone on a stark, matte dark graphite surface. A single shaft of dramatic light illuminates the pot, leaving the rest of the frame in deep shadow. The image exudes high-end curation, focusing on the tactile quality and ancient geometry of the artifact." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0MmYEyTSN-N7JIqjJKjqmzzzLElEbJxewO85_TK3dApfWHUWjIjUcXt2ajXk_YZdYuaXlOz85LK1IBQgd1dv1h4eBP1-5XNjTVpIHO4nbsmN5NgIa1lcL0mzocajwQXk6YDKHI4M7zXEwNLdZ17N3Tixy_lN8niVRQ498Q385Z6qP9L6tOrFNgjrE4AEkTsRPd9ONy7gJxzRAFn3nhi7dtxeFvVrhrdRBJQ7ch6wSqd3PVFUICI4BERsWA0htfJV9dPEI5ox4Ipw')"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-graphite-deep/80 to-transparent">
+<span class="font-label-caps text-label-caps text-primary uppercase block mb-1">Cerâmica Kadiwéu</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Geometria Ancestral</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 border border-old-gold/10 h-[288px] flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">gesture</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface mb-4 leading-snug">"A argila fala. Nossa mão apenas escuta o que a terra quer ser."</p>
+<span class="font-label-caps text-label-caps text-old-gold">— Mestra Ceramista</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Música e Ritmos -->
+<section class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-dim relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-old-gold/20 to-transparent"></div>
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-stack-lg">
+<div class="md:w-1/3 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-clay-terracotta uppercase mb-4 block tracking-[0.2em]">Sonoridade Regional</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Música &amp; <br/> Ritmos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Da fronteira vibrante ao silêncio do campo, a trilha sonora de Mato Grosso do Sul é um mosaico ibero-americano. O acordeon respira, o violão dedilha a saudade.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps uppercase hover:text-old-gold transition-colors w-fit pb-1 border-b border-primary/30 hover:border-old-gold" href="/turismo">
+                        Ouvir Curadoria <span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</a>
+</div>
+<div class="md:w-2/3 flex overflow-x-auto gap-6 pb-8 no-scrollbar snap-x">
+<div class="min-w-[300px] md:min-w-[400px] snap-center group">
+<div class="relative w-full aspect-[4/5] overflow-hidden mb-4 border border-old-gold/10">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" data-alt="A moody, high-contrast editorial photograph of a musician playing an accordion (gaita) in a dimly lit, atmospheric setting. The focus is entirely on the weathered hands of the musician and the intricate details, bellows, and keys of the instrument. The color palette is restricted to deep blacks, warm shadows, and subtle reflections of warm light on the instrument's surface, creating an intimate, soulful, and luxurious aesthetic characteristic of fine art documentary photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkuJu4FNqO2J17yOQIOu9BnHuDLkkOWV_n097Z0aB19dAV0kU5pOzo0u_6xSICV_RsZHxDpDCqQfYZrHBxiaVaA-0LQPwkxAD4muva8QXM2l_xUkFJ2QKp4_5Y5dxJPehJlYhVbh2RfwfDyayh7hvbFwKoSIbOjb4IINFyedu075LrMjAhCwLdrdyZ34CloH2xg3rqGuMHONe_I6gTvrjlkliMP0IeZozKE9nA3alB1qLMRbfst-Y4vjYpiI9iyIWpydNLuiY_qT0')"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Chamamé</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A respiração do acordeon nas noites frias de fronteira.</p>
+</div>
+<div class="min-w-[300px] md:min-w-[400px] snap-center group">
+<div class="relative w-full aspect-[4/5] overflow-hidden mb-4 border border-old-gold/10">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" data-alt="An abstract, long-exposure photograph capturing the swirling motion of traditional dancers performing the Polca Paraguaia. The image features dynamic blurs of vibrant red and white fabric against an almost pitch-black background, creating a sense of rapid movement and rhythm. The lighting is cinematic, isolating the subjects to emphasize the energy of the dance. The style is modern, editorial, and evocative, avoiding traditional tourist photography tropes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEsFADATaMt9Jy_-KkOjUKXKRJAqm_dq8DX8WXYIx5E_mQKRHBlyhXrikV5cjKDJIQKp7kThaw-FlbHVUj7c8DxfI669djKK0pLwEHknOpoBYlh-QubitYmrth-5j4gQ83u2-KN5vpyrGyBsvPRtvi3QtPNT7xeE_78_qdLmInqmkJeAuQKldFwBBCOJJKZBk2hJ6pk5HGf0C61GIu8nwA28OuxJuegs_IbEe9Ibxfm-NMbDQVY8A1IXyn6mWV07riPBoQin6Bpso')"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Polca Paraguaia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Compasso acelerado que cruza o Rio Paraguai.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Patrimônio Histórico Timeline -->
+<section class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-[800px] mx-auto">
+<div class="text-center mb-stack-lg">
+<span class="font-label-caps text-label-caps text-old-gold uppercase mb-4 block tracking-[0.2em]">Memória Edificada</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Patrimônio Histórico</h2>
+</div>
+<div class="relative border-l border-old-gold/20 pl-8 ml-4 md:ml-0 md:pl-12 space-y-16">
+<div class="relative">
+<!-- Custom Diamond Bullet -->
+<div class="absolute -left-[38px] md:-left-[54px] top-2 w-3 h-3 bg-old-gold rotate-45 transform origin-center shadow-[0_0_10px_rgba(197,160,89,0.5)]"></div>
+<span class="font-label-caps text-label-caps text-clay-terracotta mb-2 block">Século XIX</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Ciclo da Erva-Mate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A arquitetura de fronteira forjada pela riqueza dos ervais. Casarões com pátios internos e varandas profundas para suportar o calor do trópico, influências platenses moldando as cidades do sul do estado.</p>
+<div class="w-full h-64 bg-cover bg-center border border-old-gold/10" data-alt="A striking architectural photograph of a historic colonial mansion from the Erva-Mate cycle in Mato Grosso do Sul, captured at dusk. The building is silhouetted against a deep, dark twilight sky, with only a few warm, golden lights illuminating the heavy wooden doors and deep verandas. The composition is stark and minimalist, focusing on the strong lines and decaying grandeur of the structure in a high-end, moody editorial style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGxQ9vj7Wd3GOH4nSjXIURTdBMrlif4vthOLPE84IIV5KVhaU71D6lpRTcNr1OoU_G7RtrHZ8ytVEiKPTR0SpRHBvjNG0hUfTXQfTPHl3JP2K_WLJ0RxSJonZNA0tVgetcjAqTQ8Kkr2iVDoLjKQIBQ4_sETmE-NtKMgMvAAHRRcQwrqrWJhBzfsTKIxqcBcPppVQeqIjwcRLQwtN7Kp90Sg3IbNE8MgxtYsFcC4MjjL1M09U79l_LQuEBJKPkGb_oT4Om7h2CBE8')"></div>
+</div>
+<div class="relative">
+<div class="absolute -left-[38px] md:-left-[54px] top-2 w-3 h-3 bg-old-gold rotate-45 transform origin-center shadow-[0_0_10px_rgba(197,160,89,0.5)]"></div>
+<span class="font-label-caps text-label-caps text-clay-terracotta mb-2 block">Início Século XX</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">A Chegada da Ferrovia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A Noroeste do Brasil (NOB) rasga o cerrado, trazendo tijolos aparentes, estações de influência inglesa e um novo pulso urbano. O trem como vetor de modernidade e miscigenação cultural.</p>
+<div class="w-full h-64 bg-cover bg-center border border-old-gold/10 grayscale" data-alt="A dramatic black and white photograph of an abandoned, historic railway station in Mato Grosso do Sul. The image is highly textural, focusing on the aged brickwork, rusted iron tracks, and the harsh geometry of the industrial architecture against a stark, unyielding sky. The high contrast and deep shadows evoke a sense of melancholy and historical weight, styled for a premium editorial feature." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbVeHak9U6dF_7FfLCzdLRlnz80qQVyo8QKpk-29nHs0lZyvq1pt8NvVEFb0aAoUQfnSBvjLshiWSh2DtPdv6yXjwMKNCtiGY96BC9R0fWhGiI-3uMoHYeBSd9G7yVpJATBv9KfWtnGS_C8HW3RrW_Kg9rWCh4EHk5sTGF-YmvI95Vy2VAfia23xBjLV9JeFfFZjFCHeX565cfWDifmYtCQGjVyIEfEljv26_oF820GavFVQ-h6lbZhZ0VzdVghykZuDZZcxsKa1Y')"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-old-gold/20">
+<div>
+<span class="font-display-lg text-headline-lg text-primary dark:text-primary mb-6 block">Origem MS</span>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-70 max-w-sm">
+                © 2026 Origem MS. Território de Identidade.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/sobre">Nossa História</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/expedicoes">Expedições</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/contato">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/privacidade">Privacidade</a>
+</div>
+<div class="flex justify-start md:justify-end">
+<button class="w-12 h-12 rounded-full border border-old-gold/30 flex items-center justify-center text-old-gold hover:bg-old-gold hover:text-graphite-deep transition-all duration-300">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+</div>
+</footer>
+</body></html>

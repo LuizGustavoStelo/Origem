@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Origem MS - Gastronomia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#775a19",
+                        "surface-dim": "#131314",
+                        "on-secondary": "#5b1a00",
+                        "old-gold": "#C5A059",
+                        "error-container": "#93000a",
+                        "outline-variant": "#4e4639",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#d3e8d5",
+                        "surface-container-high": "#2a2a2b",
+                        "on-tertiary-container": "#2d4032",
+                        "on-surface-variant": "#d1c5b4",
+                        "tertiary-fixed-dim": "#b7ccb9",
+                        "clay-terracotta": "#B35A38",
+                        "primary-container": "#c5a059",
+                        "tertiary": "#b7ccb9",
+                        "inverse-surface": "#e5e2e3",
+                        "on-tertiary-fixed-variant": "#394b3d",
+                        "inverse-on-surface": "#303031",
+                        "surface-container-highest": "#353436",
+                        "on-secondary-fixed": "#380d00",
+                        "surface-container-low": "#1b1b1c",
+                        "primary-fixed": "#ffdea5",
+                        "surface-container-lowest": "#0e0e0f",
+                        "on-background": "#e5e2e3",
+                        "secondary-fixed": "#ffdbcf",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface-variant": "#353436",
+                        "olive-closed": "#4A5D4E",
+                        "error": "#ffb4ab",
+                        "paper-cream": "#F4F1EA",
+                        "surface-container": "#1f1f20",
+                        "surface": "#131314",
+                        "on-tertiary": "#233427",
+                        "surface-bright": "#39393a",
+                        "on-primary-container": "#4e3700",
+                        "on-secondary-fixed-variant": "#7a2f10",
+                        "surface-tint": "#e9c176",
+                        "on-error": "#690005",
+                        "on-primary": "#412d00",
+                        "on-tertiary-fixed": "#0e1f13",
+                        "outline": "#9a8f80",
+                        "primary": "#e9c176",
+                        "secondary-container": "#7a2f10",
+                        "on-primary-fixed": "#261900",
+                        "tertiary-container": "#96ab99",
+                        "on-secondary-container": "#ff9b77",
+                        "primary-fixed-dim": "#e9c176",
+                        "background": "#131314",
+                        "secondary": "#ffb59b",
+                        "secondary-fixed-dim": "#ffb59b",
+                        "on-surface": "#e5e2e3",
+                        "graphite-deep": "#1A1A1B"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "stack-xl": "120px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "1.1", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-graphite-deep text-on-surface font-body-lg min-h-screen selection:bg-old-gold selection:text-graphite-deep flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-md border-b border-old-gold/30">
+<div class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary uppercase tracking-tighter">
+            Origem MS
+        </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-headline-md text-headline-md hover:text-primary transition-colors duration-300 opacity-80" href="/gastronomia">Gastronomia</a>
+<a class="text-on-surface-variant font-medium font-headline-md text-headline-md hover:text-primary transition-colors duration-300" href="/cultura">Cultura</a>
+<a class="text-on-surface-variant font-medium font-headline-md text-headline-md hover:text-primary transition-colors duration-300" href="/turismo">Turismo</a>
+<a class="text-on-surface-variant font-medium font-headline-md text-headline-md hover:text-primary transition-colors duration-300" href="/a-rota">A Rota</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-primary hover:text-old-gold transition-colors">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-[100px]">
+<!-- Hero Section -->
+<section class="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden mb-stack-xl">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-graphite-deep/40 to-transparent z-10"></div>
+<div class="bg-cover bg-center w-full h-full" data-alt="A top-down view of a highly sophisticated, minimalist ceramic plate featuring an elevated interpretation of traditional Pantanal cuisine. The plating is precise, with organic textures like a perfectly seared piece of local fish, surrounded by carefully placed native micro-greens and a subtle emulsion sauce. The lighting is natural, soft, and directional, creating deep shadows that emphasize the texture of the food and the dark, rustic wooden table underneath. The overall aesthetic is dark, moody, and extremely high-end, fitting a premium culinary magazine. The mood is intimate and refined." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2d3AvsM7ScZACXvL-93lyuDMt3V7yHeTyFJVWyhPgwyg3qorvEWRzKWhNPg4kpUPPs1E6OjkpjVH42KfEGgLP0cFUMtyNz3sQY_5WAsr7Gh3epGyH3douMnHBbLc32lAC38o1vaRvO-Ju4LIFgVCFjXcelYVyUWorDJ0H1R2bbFuz3jyM52Ts59OybFV31cml21kLYWKPIT1XcKBgY4I-iU1XiuiS6-Z7lea0rSJPwteeuspv0AtDfBJQM0B-gwopDTQZq1YmYBw')"></div>
+</div>
+<div class="relative z-20 container mx-auto px-gutter text-center max-w-4xl mt-20">
+<p class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest mb-6">Sabores do Cerrado &amp; Pantanal</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-paper-cream mb-8 leading-tight">A Essência da Nossa Terra</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Uma jornada curada através dos paladares mais autênticos de Mato Grosso do Sul, onde a tradição encontra a alta gastronomia.</p>
+</div>
+</section>
+<!-- A Curadoria -->
+<section class="container mx-auto px-margin-mobile md:px-margin-desktop mb-stack-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2 relative">
+<img alt="Curatorship Seal" class="w-32 h-32 md:w-48 md:h-48 object-contain absolute -top-12 -left-8 md:-top-16 md:-left-16 z-20 animate-spin-slow" src="https://lh3.googleusercontent.com/aida/AP1WRLuZJ0vdr7pzImYnIRlbio-SxhpL1c7lZaCYtD8bSBKUeyhcFsXXfhLlitWvk6rGp-JfbDFUdF4NavJfloUzL88Ts4zf2NK7lyAWV4pzQDUdb1xlZdiY8_xEQJE0_ThIKJb02wMd7-Wp69d2NP3rFP8Ehs2SrCXhpnq7fZGJ45F5Sxs4Xrp3MKF_GCN3Hi-Lurfp9s3aSuXocc8tgVi2VSqwih_yPPrPdgv9QMKgdbr4jh8hrcaKWKfXwMc" style="animation: spin 30s linear infinite;"/>
+<div class="relative aspect-[3/4] w-full overflow-hidden border border-old-gold/20">
+<img class="object-cover w-full h-full" data-alt="A high-quality portrait of Chef Paulo Machado, a renowned Brazilian chef, standing in a sophisticated, softly lit kitchen environment. He is wearing a minimalist, dark linen chef's jacket. The lighting is dramatic, with soft side light highlighting his focused expression and the texture of the fabric. The background is slightly blurred but suggests a professional, high-end culinary setting with subtle metallic and dark wood tones. The mood is authoritative yet deeply passionate, conveying expertise and deep respect for regional ingredients. The overall style is editorial and moody." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5cljtpP1wO3Nn6SoTGyuKA--r_mnsL48qHDi-fa4wqgrKlzS1WHBMh_97RSu0_U2tn07hJqa1o0gZLGFAPl0Lrp_INwxFkK0Hc7-jOc45xwXtZp9g_14RWcGiy-F85p5ILd_7X8U2XJPMXT-DKneLM_1_xk7fmjFYAixBdhDahsJ-6EonmIgdp5oK1TmW2ezcBcV35kthXPJI5FQOYysnPF62160QLKGxgfLSZMtHhlRJ9tZnZrrX_jqRXmsl8hAKP7BIAzsVbL0"/>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-8 mt-12 md:mt-0">
+<h2 class="font-headline-lg text-headline-lg text-paper-cream mb-6">A Curadoria</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Sob a batuta criteriosa do Chef Paulo Machado, cada experiência listada neste diretório passa por uma avaliação rigorosa de autenticidade, respeito aos ingredientes nativos e excelência na execução.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Nossa missão é mapear os tesouros gastronômicos da Rota Bioceânica, celebrando desde a rústica comida de comitiva até as mais refinadas releituras contemporâneas.</p>
+<button class="font-label-caps text-label-caps text-old-gold border border-old-gold py-3 px-8 hover:bg-old-gold hover:text-graphite-deep transition-colors duration-300 tracking-widest uppercase">
+                        Conheça os Critérios
+                    </button>
+</div>
+</div>
+</section>
+<!-- Diretório Section -->
+<section class="container mx-auto px-margin-mobile md:px-margin-desktop mb-stack-xl">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-paper-cream mb-4">Experiências Recomendadas</h2>
+<div class="w-16 h-[1px] bg-old-gold mx-auto opacity-50"></div>
+</div>
+<!-- Category: Contemporânea -->
+<div class="mb-20">
+<h3 class="font-headline-md text-headline-md text-old-gold mb-8 border-b border-old-gold/20 pb-4">Alta Gastronomia &amp; Contemporânea</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden">
+<div class="absolute top-4 right-4 z-20">
+<img alt="Seal" class="w-12 h-12 object-contain drop-shadow-md" src="https://lh3.googleusercontent.com/aida/AP1WRLuZJ0vdr7pzImYnIRlbio-SxhpL1c7lZaCYtD8bSBKUeyhcFsXXfhLlitWvk6rGp-JfbDFUdF4NavJfloUzL88Ts4zf2NK7lyAWV4pzQDUdb1xlZdiY8_xEQJE0_ThIKJb02wMd7-Wp69d2NP3rFP8Ehs2SrCXhpnq7fZGJ45F5Sxs4Xrp3MKF_GCN3Hi-Lurfp9s3aSuXocc8tgVi2VSqwih_yPPrPdgv9QMKgdbr4jh8hrcaKWKfXwMc"/>
+</div>
+<div class="aspect-[4/3] w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep to-transparent opacity-80 z-10"></div>
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A beautifully plated contemporary dish featuring local Pantanal ingredients, served on a dark slate plate. The dish includes delicate cuts of locally sourced meat, perhaps jacaré or pintado, accompanied by purees in vibrant terracotta and deep green hues. The composition is highly artistic, minimalist, and elegant. The lighting is dramatic and directional, highlighting the textures of the food against the dark background. The scene exudes luxury and sophisticated culinary artistry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6hh8jehovl-0eqe8fzXLR5lZ6b9-tznpuxdjzD3nLCPYqQA9aXhHKEQoV6z17M_ftJvA8Ai9bHBgq0DyzYm4drxZIvIYBcArTyF_JqDzvortTXeSpfipHgntlVrTI8fpdHyJ6BZQ4Kcp2aaVp9dS-4yj-zRRfLGUcBhQfkJxXS_pX67KXXdAzp6fLKHdVQ-TAtnG-k5tF35sQvjfPe4F8RvYg0LELfy1UXuMSeSYoizgPIpPI_JxSmLQdraV3h2UMESupSAqQtFA"/>
+</div>
+<div class="p-6 relative z-20 -mt-16">
+<p class="font-label-caps text-label-caps text-clay-terracotta uppercase tracking-widest mb-2">Campo Grande</p>
+<h4 class="font-headline-md text-[24px] text-paper-cream mb-3">Origem Bistrô</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">Uma releitura sofisticada dos clássicos pantaneiros. O chef utiliza técnicas francesas aplicadas a ingredientes do Cerrado, criando uma sinfonia de sabores inesperados.</p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-old-gold hover:text-white transition-colors group/link" href="/contato">
+                                Reservar Mesa <span class="material-symbols-outlined ml-2 text-[16px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden">
+<div class="absolute top-4 right-4 z-20">
+<img alt="Seal" class="w-12 h-12 object-contain drop-shadow-md" src="https://lh3.googleusercontent.com/aida/AP1WRLuZJ0vdr7pzImYnIRlbio-SxhpL1c7lZaCYtD8bSBKUeyhcFsXXfhLlitWvk6rGp-JfbDFUdF4NavJfloUzL88Ts4zf2NK7lyAWV4pzQDUdb1xlZdiY8_xEQJE0_ThIKJb02wMd7-Wp69d2NP3rFP8Ehs2SrCXhpnq7fZGJ45F5Sxs4Xrp3MKF_GCN3Hi-Lurfp9s3aSuXocc8tgVi2VSqwih_yPPrPdgv9QMKgdbr4jh8hrcaKWKfXwMc"/>
+</div>
+<div class="aspect-[4/3] w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep to-transparent opacity-80 z-10"></div>
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated dining room interior of a high-end restaurant in Mato Grosso do Sul. The decor blends modern luxury with regional elements—dark wood, subtle leather accents, and warm, dim, ambient lighting. In the foreground, a beautifully set table with sparkling glassware and a minimalist floral arrangement. The atmosphere is exclusive, intimate, and refined, capturing the essence of an upscale dining experience in the heart of Brazil. The color palette is dominated by deep browns, soft golds, and charcoal grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp5Gyvf6E9vzM5wVNkhQO1WT0KuVKQ3VoRspwBANcI2Zx-GuG8K-NTiTos1M-PNWD0F54j3RlyhgMsjdYRGaYiKHjts4RAG3OLXHV0JkE6ewlHb2MwelMUtk5rGpUVARSVjsT9ECVE-hQ2UAJ8i4TfYuJif3yY9PrNHZq98rIPu1__ziiJqKR1oUGkuZ0eabQSFVZ8qOagPyL1NMCDaBZh8KdjwQTMkmwwtboqGPf0DSXa1HowGAi0YN2aVSi9uvORu4m7e3gqwns"/>
+</div>
+<div class="p-6 relative z-20 -mt-16">
+<p class="font-label-caps text-label-caps text-clay-terracotta uppercase tracking-widest mb-2">Bonito</p>
+<h4 class="font-headline-md text-[24px] text-paper-cream mb-3">Casa do João</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">Referência na região, oferece uma imersão nos peixes de água doce da bacia do Prata, preparados com maestria e uma apresentação impecável.</p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-old-gold hover:text-white transition-colors group/link" href="/contato">
+                                Reservar Mesa <span class="material-symbols-outlined ml-2 text-[16px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Ingredientes Nativos Gallery -->
+<div class="mt-stack-xl">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-12 border-b border-old-gold/20 pb-4">
+<h3 class="font-headline-md text-headline-md text-old-gold">Ingredientes Nativos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0 max-w-md text-right">O coração da nossa gastronomia pulsa através da biodiversidade única do Cerrado e Pantanal.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ingredient 1 -->
+<div class="flex flex-col">
+<div class="aspect-square w-full overflow-hidden mb-4 rounded-none">
+<img class="w-full h-full object-cover" data-alt="A close-up, highly detailed macro photograph of a fresh Pequi fruit (Caryocar brasiliense) sliced open, revealing its vibrant orange-yellow flesh and inner core. The fruit rests on a piece of dark, rough-hewn wood. The lighting is studio-quality, emphasizing the rich color and oily texture of the fruit against the moody, dark background. The image has a botanical, editorial feel, treating the ingredient like a precious jewel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB56KzsohIN5frO88hOEdUYQAm7kz8oXfEU3VTRh8_dSPo7myMkPAryd69XOfyp-6qPb3MDezOBgL7i9-j8Rxje3702xi9pcnp2VhPtVu_wPhK20IewHO7t_EmWvy5Y48W21Q9-a8YnBq_VK2NOfiRx4SDJs5K-Waj7YJnUG82JumxKmyFXlEgw0pwn6AK3m4IF16NXSk3e8cOsZ-nd_aVCBCUrRsOhwss0Rju5AgVO1A3LpYNae3dOt25cef3w6WMwHZJeP44l4Ak"/>
+</div>
+<h4 class="font-headline-md text-[24px] text-paper-cream mb-2">Pequi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fruto símbolo do Cerrado, de sabor intenso e inconfundível, utilizado em arrozes, frangos e licores. Seu azeite é um tesouro culinário.</p>
+</div>
+<!-- Ingredient 2 -->
+<div class="flex flex-col">
+<div class="aspect-square w-full overflow-hidden mb-4 rounded-none">
+<img class="w-full h-full object-cover" data-alt="A beautifully composed shot of freshly harvested Bocaiúva (Acrocomia aculeata) fruits, also known as macaúba. They are small, round, and have a yellowish-orange hue. They are arranged aesthetically in a handmade, rustic clay bowl sitting on dark slate. Natural, soft light grazes the fruits, highlighting their smooth texture and warm colors against the stark, dark environment. The style is minimalist and high-end editorial food photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMyH8wjikgBJcf0TSRHiYfGzCMsDeXL3MXaPNmfKvzIaRn509XERvbHWFtgzIxhZTV67w43f_lFtCgYEQ9lBXLk9oIpFf4gnx-4Ic2zD1up9SLHHz6IPdv0xM8WS85dWexnwNYULXfgT5Mwzb_8q7OieM-KYxVciPsByy20aNKUFY4oDAeXFULZx_I6z6UarxHUnA4_HS59gEAK400MZnmGh67NJTaj4WN7SG_uCtCMChsq-k2lAWW_2di2Allpf8C2MR_15IIPlA"/>
+</div>
+<h4 class="font-headline-md text-[24px] text-paper-cream mb-2">Bocaiúva</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Conhecida como 'chiclete de boi', esta palmeira oferece frutos doces e nutritivos, base para farinhas, sorvetes e pratos doces regionais.</p>
+</div>
+<!-- Ingredient 3 -->
+<div class="flex flex-col">
+<div class="aspect-square w-full overflow-hidden mb-4 rounded-none">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of Guavira (Campomanesia adamantium) fruits on a branch with a few green leaves. The fruits are small, round, and greenish-yellow. The lighting is soft and ethereal, perhaps simulating early morning light in the Cerrado. The background is a deeply blurred, dark graphite tone, making the delicate fruit pop. The image conveys freshness, natural beauty, and a sense of discovery, typical of high-end botanical or culinary magazines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKpk5xt4MNltleX9fyqWqkcdlY2_PwUfsl5EZkUr2TDKQ7L4xRMguu11rqLcGRCtX-pRkeTdENSJ3z5ubO-pFmfUMhUqG0JLKGJZRkSyyeILhp12RUbDKCGJS1wJgVsNeKPaR2A7-iUWd3zQxryW3s_YR-iJF3oFfkMwl2fEFkxI7-X9Brol8BRoOBxgTW-wjW7tmnpyy2fPRnnua4RQzuSMo4qQBV_Sk4IHpvPI4BmdjhHPW8x2Po1wf1rms7-jsySRQJ_E4GLvk"/>
+</div>
+<h4 class="font-headline-md text-[24px] text-paper-cream mb-2">Guavira</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Pequena, doce e cítrica, a guavira é a essência do verão sul-mato-grossense, marcando presença em sobremesas sofisticadas e drinks.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-old-gold/20">
+<div>
+<div class="font-display-lg text-headline-lg text-primary dark:text-primary mb-4">Origem MS</div>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface">© 2026 Origem MS. Território de Identidade.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/sobre">Nossa História</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/expedicoes">Expedições</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/contato">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:underline" href="/privacidade">Privacidade</a>
+</div>
+<div class="flex justify-end">
+<!-- Optional additional footer content could go here, keeping the grid structure -->
+</div>
+</footer>
+</body></html>

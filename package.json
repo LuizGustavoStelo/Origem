@@ -1,0 +1,13 @@
+{
+  "name": "origem",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma Origem MS: curadoria de gastronomia, cultura e turismo.",
+  "scripts": {
+    "start": "node apps/web/server.js",
+    "check": "node --check apps/web/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

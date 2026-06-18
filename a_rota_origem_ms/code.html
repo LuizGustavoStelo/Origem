@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A Rota - Origem MS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#775a19",
+                      "surface-dim": "#131314",
+                      "on-secondary": "#5b1a00",
+                      "old-gold": "#C5A059",
+                      "error-container": "#93000a",
+                      "outline-variant": "#4e4639",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed": "#d3e8d5",
+                      "surface-container-high": "#2a2a2b",
+                      "on-tertiary-container": "#2d4032",
+                      "on-surface-variant": "#d1c5b4",
+                      "tertiary-fixed-dim": "#b7ccb9",
+                      "clay-terracotta": "#B35A38",
+                      "primary-container": "#c5a059",
+                      "tertiary": "#b7ccb9",
+                      "inverse-surface": "#e5e2e3",
+                      "on-tertiary-fixed-variant": "#394b3d",
+                      "inverse-on-surface": "#303031",
+                      "surface-container-highest": "#353436",
+                      "on-secondary-fixed": "#380d00",
+                      "surface-container-low": "#1b1b1c",
+                      "primary-fixed": "#ffdea5",
+                      "surface-container-lowest": "#0e0e0f",
+                      "on-background": "#e5e2e3",
+                      "secondary-fixed": "#ffdbcf",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "surface-variant": "#353436",
+                      "olive-closed": "#4A5D4E",
+                      "error": "#ffb4ab",
+                      "paper-cream": "#F4F1EA",
+                      "surface-container": "#1f1f20",
+                      "surface": "#131314",
+                      "on-tertiary": "#233427",
+                      "surface-bright": "#39393a",
+                      "on-primary-container": "#4e3700",
+                      "on-secondary-fixed-variant": "#7a2f10",
+                      "surface-tint": "#e9c176",
+                      "on-error": "#690005",
+                      "on-primary": "#412d00",
+                      "on-tertiary-fixed": "#0e1f13",
+                      "outline": "#9a8f80",
+                      "primary": "#e9c176",
+                      "secondary-container": "#7a2f10",
+                      "on-primary-fixed": "#261900",
+                      "tertiary-container": "#96ab99",
+                      "on-secondary-container": "#ff9b77",
+                      "primary-fixed-dim": "#e9c176",
+                      "background": "#131314",
+                      "secondary": "#ffb59b",
+                      "secondary-fixed-dim": "#ffb59b",
+                      "on-surface": "#e5e2e3",
+                      "graphite-deep": "#1A1A1B"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-xl": "120px",
+                      "margin-desktop": "64px",
+                      "stack-lg": "80px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["EB Garamond"],
+                      "display-lg-mobile": ["EB Garamond"],
+                      "headline-md": ["EB Garamond"],
+                      "display-lg": ["EB Garamond"],
+                      "label-caps": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        html { scroll-behavior: smooth; }
+        body { background-color: theme('colors.background'); color: theme('colors.on-surface'); }
+    </style>
+</head>
+<body class="antialiased selection:bg-old-gold selection:text-background">
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter md:px-margin-desktop py-4 bg-surface/90 backdrop-blur-md border-b border-old-gold/30">
+<div class="flex items-center gap-4">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary uppercase tracking-tighter hover:opacity-80 transition-opacity" href="/">Origem MS</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/gastronomia">Gastronomia</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/cultura">Cultura</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/turismo">Turismo</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="/a-rota">A Rota</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="md:hidden text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<header class="relative w-full h-screen min-h-[800px] flex items-end pb-margin-mobile md:pb-margin-desktop px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="A sweeping aerial wide shot of a modern, minimalist suspension bridge crossing the vast Paraguay river at dusk. The landscape is the raw, untamed Pantanal, blending into the Cerrado biome. The lighting is cinematic, deep, and moody, with high contrast between the dark graphite shadows of the water and the glowing old-gold sunset reflecting off the sleek concrete and steel of the bridge. The aesthetic is ultra-premium travel editorial, emphasizing the juxtaposition of human engineering and raw territorial authenticity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArU6tJMttQZWfJW0ng4IE030Gf6LLW7GbiVHoSi1nwS1ZtsTlLl4MFytUV_O4iYJkdCCawttIMw5WTZLAf6cR0_aM6viYp3v9WZXiodXe2AMt9MNvWo9ICbYJe0Vc5F2dNQdQO6ujLoLZc8tE8cD2cOZYucAyfTB-u6XMjP62Imp2nj90UlJr5HuwXV3mySJ9Ot425W7fv0L46VMj_V7cwpYTAxPoZ7SN9BKc06Py2J_hGgUVa0uYaJxHDq3pu5FOjBjdw-ge0St0')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 flex flex-col gap-6">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">A Conexão Bioceânica</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">O Caminho <br/><span class="text-primary italic">entre Oceanos</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">Uma travessia monumental que redefine a geografia econômica e cultural da América do Sul, unindo o Atlântico ao Pacífico através do coração do Mato Grosso do Sul.</p>
+</div>
+</div>
+</header>
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 sticky top-32">
+<h2 class="font-headline-lg text-headline-lg text-primary border-l-2 border-clay-terracotta pl-6">A Rota<br/>Bioceânica</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-8">Mais do que uma estrada, um corredor estratégico de integração.</p>
+</div>
+<div class="md:col-span-7 flex flex-col gap-12 mt-12 md:mt-0">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        A Rota de Integração Latino-Americana (RILA) representa um marco histórico. Ela não apenas encurta distâncias físicas para as exportações brasileiras rumo aos mercados asiáticos, mas tece uma nova rede de relações diplomáticas, turísticas e culturais entre o Brasil, Paraguai, Argentina e Chile.
+                    </p>
+<div class="relative w-full aspect-[16/9] border border-old-gold/30">
+<div class="bg-cover bg-center w-full h-full" data-alt="A sophisticated, high-end infographic map rendered in dark mode. The base is deep graphite (#1A1A1B). A sleek, glowing line in old-gold traces a route across South America, starting from Mato Grosso do Sul, passing through Paraguay and Argentina, and ending at the Pacific coast of Chile. Minimalist topographical lines in faint olive-green add texture. Key nodes along the route are marked by subtle clay-terracotta diamond icons. The style is strictly editorial, minimalist-luxury, resembling a diagram in a premium business magazine." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0BU--pyOXiPJWT5FoJLQ9NIT58YnsZ94tsa6dSWBm5JlNucazpKmzMgDlQMCPs6yGVd-xJ6JRPDo4ZRvGRwOSEIBx4Vq-6slwX4eu1tUfz20EEAILR4-x0agCR1t7R2Csrj47DPjuvm49ou2A7Kp0AMupOfGv2ngpP5D6ZkJsdCQBUHzd6gfOjdIRSKJP6lo_JoTSwEdcTlTdqQaBLNlR_dbC6pWFoAYbUz5DCoTNrBo5XX6_CiChoa369TMSR4jiVdtCZ_0CxYg')"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-stack-xl bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Territórios Conectados</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-xl">Os municípios sul-mato-grossenses que servem como portais para esta nova era de desenvolvimento.</p>
+</div>
+<a class="group flex items-center gap-2 font-label-caps text-label-caps text-old-gold hover:text-primary transition-colors border border-old-gold/30 px-6 py-3 rounded-none" href="/expedicoes">
+<span>Ver Mapa Completo</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container border border-old-gold/10 hover:border-old-gold/40 transition-colors">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity duration-700" data-alt="A dramatic photograph of Porto Murtinho, Mato Grosso do Sul, at dawn. The Paraguay river dominates the foreground, reflecting the early morning light. Small, traditional wooden boats contrast with modern infrastructure in the background. The lighting is moody, with deep graphite shadows and clay-terracotta highlights from the rising sun. The image has a raw, authentic, high-contrast editorial feel, capturing the essence of a border town awakening." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDC3x79OIwuWIodInF48SE5da-AW_EVf9LtEPfObAAAqCoHXXc-EWuJHwN66OYPXy4LBdTqVOveFZojmTMlqGtujdsiKWMbiEMjj-33KXxtXt99EFas_iUcrwWmT8JyLV99kQ4ev-0gBJOo1oIjbJ4YtUgtlGvEXifqyrIvwdinIh-lbCGAivpE9h1mXTUCJDnEC6RobhFukIzcSzNQMIo6Rzd3ChLBImgxRGbth41GFc-CxkMv6Jr772awUHM-D98el3qQrKdFN6s')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline-md text-headline-md text-primary">Porto Murtinho</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">O portal de saída do Brasil, onde as águas do Rio Paraguai encontram a engenharia monumental.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container border border-old-gold/10 hover:border-old-gold/40 transition-colors">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity duration-700" data-alt="A sweeping view of the vibrant Cerrado landscape near Jardim, MS. Deep red earth (clay-terracotta) contrasts with the stark, twisted branches of native trees and subtle olive-green foliage. The lighting is low-angle late afternoon sun, casting long, dramatic shadows across the terrain. The aesthetic is minimalist luxury, focusing on the raw textures of the earth and the resilient flora, rendered in deep, high-contrast tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0HpfgfTa4VbIYK19tDkjZ7Hl7eMaNIRI8LuQ7isTl_lI2WJywA4k5VoV5CHCOmmksMXgmwbUN36SreLNxx_7vcnWuCKtc-jA_RW5xYx1POPGmvHC_YMgFJb_X-b355nRGiJrex1xqN2zkidGLqZsce4MpcObLRvHsKfTNSjQsnTtACeTnMQec3-sEHDxZ_zmPPAqrTzCl9jQdNPlC2LeSUn0qg_SXqFiPH56vbbkVyiQPyFkaAxoWX-g2UKm-HeFe_2Dqf6zGWF0')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline-md text-headline-md text-primary">Jardim</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Belezas naturais estonteantes do Cerrado, integradas ao fluxo da nova rota comercial.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container border border-old-gold/10 hover:border-old-gold/40 transition-colors">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity duration-700" data-alt="An abstract, architectural close-up of a modern highway cutting through the rural landscape of Nioaque, MS. Focus on the geometry of the road markings, the asphalt texture, and a lone signpost catching the golden hour light. The background is a blurred expanse of dark green fields and deep graphite sky. The image conveys forward momentum, modern infrastructure, and isolation, maintaining the sophisticated, dark editorial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgQT2v_M55HDPJklISLSEzebXDZu0cwqWL0ADaITFihKdDYF5v0PhjrRW3KR47qg9Mf60P0f8jIlFROUTTRvChZyKJBwkAVSmF-Ry047d3rLYDVhjU9z-VqyqTKb_O0ZKruwcWCtgwcv9tdn5rTMtt_ccZhxYG6a9coxqzyTSTOzs5qMZCaMFsSnnC_p5cZSVSNSxC2UnaWSpJgWmin7lWWhAcz7YymDOwFacsyTNJgG5gnf2_XXza0MeYyjR9nlG6Mk7B3TKieaw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline-md text-headline-md text-primary">Nioaque</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">História centenária que agora se cruza com o futuro do transporte latino-americano.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-old-gold/20">
+<div class="text-center mb-24 max-w-3xl mx-auto">
+<span class="font-label-caps text-label-caps text-clay-terracotta uppercase tracking-widest block mb-4">Análise</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Impacto e Legado</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
+<div class="hidden md:block absolute top-8 left-0 w-full h-[1px] bg-old-gold/20 -z-10"></div>
+<div class="flex flex-col bg-background pt-8 relative">
+<div class="w-4 h-4 bg-clay-terracotta rotate-45 absolute top-[-8px] left-8 border border-background"></div>
+<span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="public">public</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Integração Cultural</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        A fluidez das fronteiras fomentará um intercâmbio sem precedentes de saberes, gastronomia e tradições entre os povos andinos e os pantaneiros.
+                    </p>
+</div>
+<div class="flex flex-col bg-background pt-8 relative">
+<div class="w-4 h-4 bg-old-gold rotate-45 absolute top-[-8px] left-8 border border-background"></div>
+<span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="storefront">storefront</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Evolução Comercial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Redução dramática no tempo e custo de exportação para a Ásia, transformando Mato Grosso do Sul em um hub logístico de importância global.
+                    </p>
+</div>
+<div class="flex flex-col bg-background pt-8 relative">
+<div class="w-4 h-4 bg-olive-closed rotate-45 absolute top-[-8px] left-8 border border-background"></div>
+<span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="nature">nature</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Responsabilidade Territorial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        O desafio curatorial de garantir que o progresso econômico reverencie e preserve os santuários ecológicos do Pantanal e Cerrado.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-old-gold/20">
+<div>
+<h2 class="font-display-lg text-headline-lg text-primary dark:text-primary">Origem MS</h2>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors link hover underline transition-all" href="/sobre">Nossa História</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors link hover underline transition-all" href="/expedicoes">Expedições</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors link hover underline transition-all" href="/contato">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors link hover underline transition-all" href="/privacidade">Privacidade</a>
+</div>
+<div class="md:text-right">
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface text-old-gold dark:text-old-gold">© 2026 Origem MS. Território de Identidade.</p>
+</div>
+</footer>
+</body></html>

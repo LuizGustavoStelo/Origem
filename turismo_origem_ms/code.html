@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Turismo | Origem MS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#775a19",
+                        "surface-dim": "#131314",
+                        "on-secondary": "#5b1a00",
+                        "old-gold": "#C5A059",
+                        "error-container": "#93000a",
+                        "outline-variant": "#4e4639",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#d3e8d5",
+                        "surface-container-high": "#2a2a2b",
+                        "on-tertiary-container": "#2d4032",
+                        "on-surface-variant": "#d1c5b4",
+                        "tertiary-fixed-dim": "#b7ccb9",
+                        "clay-terracotta": "#B35A38",
+                        "primary-container": "#c5a059",
+                        "tertiary": "#b7ccb9",
+                        "inverse-surface": "#e5e2e3",
+                        "on-tertiary-fixed-variant": "#394b3d",
+                        "inverse-on-surface": "#303031",
+                        "surface-container-highest": "#353436",
+                        "on-secondary-fixed": "#380d00",
+                        "surface-container-low": "#1b1b1c",
+                        "primary-fixed": "#ffdea5",
+                        "surface-container-lowest": "#0e0e0f",
+                        "on-background": "#e5e2e3",
+                        "secondary-fixed": "#ffdbcf",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface-variant": "#353436",
+                        "olive-closed": "#4A5D4E",
+                        "error": "#ffb4ab",
+                        "paper-cream": "#F4F1EA",
+                        "surface-container": "#1f1f20",
+                        "surface": "#131314",
+                        "on-tertiary": "#233427",
+                        "surface-bright": "#39393a",
+                        "on-primary-container": "#4e3700",
+                        "on-secondary-fixed-variant": "#7a2f10",
+                        "surface-tint": "#e9c176",
+                        "on-error": "#690005",
+                        "on-primary": "#412d00",
+                        "on-tertiary-fixed": "#0e1f13",
+                        "outline": "#9a8f80",
+                        "primary": "#e9c176",
+                        "secondary-container": "#7a2f10",
+                        "on-primary-fixed": "#261900",
+                        "tertiary-container": "#96ab99",
+                        "on-secondary-container": "#ff9b77",
+                        "primary-fixed-dim": "#e9c176",
+                        "background": "#131314",
+                        "secondary": "#ffb59b",
+                        "secondary-fixed-dim": "#ffb59b",
+                        "on-surface": "#e5e2e3",
+                        "graphite-deep": "#1A1A1B"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-xl": "120px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.1", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface/90 backdrop-blur-md border-b border-old-gold/30">
+<div class="flex items-center space-x-6">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary uppercase tracking-tighter">Origem MS</span>
+<nav class="hidden md:flex space-x-8">
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/gastronomia">Gastronomia</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/cultura">Cultura</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="/turismo">Turismo</a>
+<a class="font-body-md text-body-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/a-rota">A Rota</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<button aria-label="Search" class="text-primary hover:opacity-80 transition-all duration-200">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button aria-label="Menu" class="text-primary hover:opacity-80 transition-all duration-200 md:hidden">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-24">
+<!-- Hero Section -->
+<section class="relative h-[819px] w-full flex items-end pb-stack-lg border-b border-old-gold/30">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="A breathtaking, cinematic wide shot of the Pantanal landscape at sunset. The sky is painted in rich hues of clay terracotta, deep old gold, and dark graphite tones. Silhouettes of indigenous flora and calm water reflecting the fading sunlight. The mood is serene, luxurious, and untamed, embodying a premium eco-tourism aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGEpLXznGu6jDQVA8kjyR9S7b-T6s85pDQwUEyacDftn-X9GNobzcI4Hc5vN51KN302Lrscx1VK8Qtdz4aydtmvs5Qt93FwNz0RBKasbSy-YLG_zhh16FtB12ftekFUuNcS6eNG_iFdyqibg8P8qEigTOms4e6XKZJRd8Qjdf9J7fyKEpCS3VyOG4F9AJoNPZXDMOhof3MMkuSfBR2l5NYAuHQl3kXd7aS2Bwwsol-vKX_ulH8TrknK65Ro-i2jh2HaWHoctB-8_E')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-graphite-deep/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[container-max] mx-auto px-margin-mobile md:px-margin-desktop w-full">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<div class="col-span-4 md:col-span-8">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest block mb-4">Experiências Imersivas</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Destinos de<br/>Identidade</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
+                            Descubra rotas desenhadas para aqueles que buscam a verdadeira essência do Cerrado e do Pantanal. Viagens exclusivas que transcendem o turismo convencional.
+                        </p>
+<button class="bg-clay-terracotta text-white font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-opacity-90 transition-colors">
+                            Explorar Roteiros
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Expedições Exclusivas -->
+<section class="py-stack-xl max-w-[container-max] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter items-center mb-stack-lg">
+<div class="col-span-4 md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Expedições<br/>Exclusivas</h2>
+</div>
+<div class="col-span-4 md:col-span-6 md:col-start-7">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Safáris fotográficos guiados por biólogos, observação de aves endêmicas e imersões silenciosas em reservas privadas. O luxo do Pantanal está na privacidade e no contato absoluto com a natureza intocada.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a majestic jaguar resting on a tree branch in the Pantanal. The lighting is dramatic and moody, with dappled sunlight filtering through the dense canopy. The overall tone is dark, luxurious, and untamed, utilizing deep greens and graphite shadows, accented by the golden fur of the animal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALsKgYfd9OQMc49BEaebIJ6LT_uqgN0BvFvFnEc2Sk_QvTv-Z5QNc4rEK5iv4HlLNPHqdHRUPCklqJwnUiu8mfkbLUkfb22TIJOrbAwTjym_ZHWdsyBSBfIql_gwvhMznOoUDBKdG6IzxQ5x4eHN42eNPEFP0fLzTSC2SL2RH3aVpZHAHiRm97KQF7eilF4cNceUKJUqXXB8XkGPwhUm7SYH-B-rYP1wqm3TtllwuNO2XxyZyqHDCB5G0xadeGAlwZMtZAq2J-0WQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6">
+<span class="font-label-caps text-label-caps text-old-gold uppercase mb-2 block">Pantanal Sul</span>
+<h3 class="font-headline-md text-headline-md text-primary">Safári Fotográfico</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A tranquil scene of a small, elegant wooden boat navigating a dark, reflective river in the Cerrado at dawn. Mist hangs over the water. The aesthetic is minimal and serene, featuring a moody palette of deep graphite, soft morning light, and subtle olive green tones of the riverbank foliage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBywk8jvD9qXvGhAwIusRtSaEKVl4JMcGbz_mju7c4Q0ZjbMWYhawLgfKGoAjy5gDzxAZy9bNtpb4qb0zvEt8Fo_WDBv8VJ7L56Ast-3Vb2NBWrI82-CCAJoiFI1EdAw4jfh9vvL6MDmvhPBuGl30qDAnX93fYINuhRK0tAVdgO9mUmt1kBdwzVmtoxs6es_Wnd30FKytCLgNnsCZlBlK54DSYhS4GCj7glW56WePvSvC7yErVXK2eyF98Xxi4143WerSY-KacywqA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6">
+<span class="font-label-caps text-label-caps text-old-gold uppercase mb-2 block">Serra da Bodoquena</span>
+<h3 class="font-headline-md text-headline-md text-primary">Águas Cristalinas</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant, exotic bird perched on a twisted, ancient branch in the Cerrado. The background is a beautifully blurred, dark, moody forest. High contrast lighting highlights the brilliant plumage against the dark graphite and olive tones of the environment. The image evokes a sense of rare discovery and premium eco-tourism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFnNSdheEBn5MdtbeH9hbjEiDdyIT4ZYwpaBuEbWOQ4uP5b55qZWm1OjQZq7FJjjNtrkiIE62eqPa5gKUtde2LG125BduC--BuT64td4xVJep_skb12w0-nT_Bm7NSwP1PGdQ6PP0OQwGoyMoHhhI-jrtvUvltkb2r14KMNJFSs4cKu4OUklV7vYHNz8Fq9wvMhc4evqigKCtCqiHh5bDs9vS0iprN3OchL0Hxi5NdrOg-TxenhEv2oND_iRMjb8LVHUEsMFlWbA8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6">
+<span class="font-label-caps text-label-caps text-old-gold uppercase mb-2 block">Cerrado</span>
+<h3 class="font-headline-md text-headline-md text-primary">Birdwatching Raro</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Hospitalidade Premium -->
+<section class="py-stack-xl bg-surface-container-low border-y border-old-gold/30">
+<div class="max-w-[container-max] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Hospitalidade Premium</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Refúgios de alto padrão que integram design sustentável e conforto absoluto, criando santuários de descanso após dias de exploração.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Lodge 1 -->
+<div class="flex flex-col md:flex-row gap-6 border-b border-old-gold/30 pb-8 items-center">
+<div class="w-full md:w-1/2 aspect-square md:aspect-[4/3] border border-old-gold/30 relative">
+<img class="object-cover w-full h-full" data-alt="Exterior view of a luxury eco-lodge in the Pantanal, featuring modern, minimalist architecture using dark wood and expansive glass. The lodge is surrounded by lush, dark foliage. Warm, golden interior lighting spills out into the twilight, creating a striking contrast with the deep graphite and olive-closed tones of the surrounding environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUCfxgGXiuMri5dywb0VLWNZeNdhlC-oQ56AKQr6KMVeQUS_Ia1WSc_fiqVL5n8I36aEdpkJFCqqkyNl5rQ96tyceCU_CR4YkUZPo-Z4mbu6bHyIfJHDtAyaqVpo-inK0vB73QYXlVwmWSbpr5uQG65K5p-wPJzaawxshkMl_9z0lIlY-t6YcAn3Qv8KabVf9vjiXOHz-Ujn3WtKfdxg_EO3VQC9yAhKuJ2tgovVIHCypJVa8TIvTVSAh8kkTgmV3vGXnkyEg4BHA"/>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Caiman Ecological Refuge</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="w-1.5 h-1.5 bg-old-gold rotate-45 block"></span>
+<span class="font-label-caps text-label-caps text-old-gold uppercase">Miranda, MS</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                Pioneira no ecoturismo, oferece vilas privativas de design contemporâneo integradas perfeitamente à paisagem pantaneira, com serviço impecável e guias bilíngues especializados.
+                            </p>
+<button class="border border-old-gold text-old-gold font-label-caps text-label-caps px-6 py-3 uppercase tracking-widest hover:bg-old-gold hover:text-graphite-deep transition-colors">
+                                Ver Detalhes
+                            </button>
+</div>
+</div>
+<!-- Lodge 2 -->
+<div class="flex flex-col md:flex-row gap-6 border-b border-old-gold/30 pb-8 items-center">
+<div class="w-full md:w-1/2 aspect-square md:aspect-[4/3] border border-old-gold/30 relative">
+<img class="object-cover w-full h-full" data-alt="Interior of a luxury boutique lodge room in the Cerrado. The aesthetic is minimal luxury, featuring natural textures, dark wood accents, and high-end linens. A large window frames a dramatic, moody view of the landscape. The color palette focuses on deep graphite, old gold accents, and subtle earthy terracotta tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWtm2VC722z2wH7wpNoAbWT8usQ49P53mailHT2OkZErG16of_8U3CMuU6jnefh_om5UigZgfPFK3U45bfzc13b3IHBiGVQfrn9PG846c4p41UQI6UXsp-rP4O-wgNh2sPWXihxY0g7FBBFi58zzyz6GWs9eU8fpf1tCk-Tr7gqxVP1zMyeKYNwqpW11nVBY6U9v5oxCcnGo81kgYfut3VI2KDhX6bi5G79sL-Y96vsABC4riYef1cB3w4BUJqpyG2pBEyECAMQi0"/>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Zagaia Eco Resort</h3>
+<div class="flex items-center gap-2 mb-4">
+<span class="w-1.5 h-1.5 bg-old-gold rotate-45 block"></span>
+<span class="font-label-caps text-label-caps text-old-gold uppercase">Bonito, MS</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                Uma imersão no luxo rústico. Chalés espalhados por vastos jardins, oferecendo privacidade e acesso privilegiado aos rios de águas cristalinas da região da Bodoquena.
+                            </p>
+<button class="border border-old-gold text-old-gold font-label-caps text-label-caps px-6 py-3 uppercase tracking-widest hover:bg-old-gold hover:text-graphite-deep transition-colors">
+                                Ver Detalhes
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Concept -->
+<section class="py-stack-xl max-w-[container-max] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Mapeando a Identidade</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Os pólos de turismo de excelência ao longo da rota.
+                </p>
+</div>
+<div class="w-full aspect-[16/9] bg-surface-container border border-old-gold/30 relative overflow-hidden flex items-center justify-center">
+<img class="object-cover w-full h-full opacity-60" data-alt="A highly stylized, minimalist map of Mato Grosso do Sul, focusing on the Pantanal and Cerrado regions. The map uses a dark graphite background with elegant, thin old-gold lines tracing major rivers and the Bioceanic Route. Tourism hubs are marked with subtle, glowing golden diamond icons. The design is abstract, editorial, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaozbQL-FbOFEBPWzkCTNaYIowq1qbxkhS-_Mzjul2xKDWhGQSFKdQHwPShxQMHhmJJFC2gOnfmLjC2u6wNjhdzUUvuU6jJhbhRT5qUM11ai2DCA11XndJUCxLQ2VURf-cUWXJxPqVKWpWIKTKtVWoJU44Rmv-w4We-r7E4Kz32X0cA92FwNKN_hZz6UDeYcJ3pi2_xXC9GKdZIjh6ouRchGP79451UY-Lebx2O-tXU7lsFBBpNlZP3y8NRRp8avrMZr_ZbI_QMvM"/>
+<!-- Map markers overlays (conceptual) -->
+<div class="absolute inset-0 z-10 pointer-events-none">
+<div class="absolute top-1/3 left-1/4 flex flex-col items-center">
+<span class="w-3 h-3 bg-old-gold rotate-45 block shadow-[0_0_15px_rgba(197,160,89,0.8)]"></span>
+<span class="mt-2 font-label-caps text-label-caps text-old-gold bg-graphite-deep/80 px-2 py-1 rounded">Corumbá</span>
+</div>
+<div class="absolute top-1/2 left-1/2 flex flex-col items-center">
+<span class="w-3 h-3 bg-old-gold rotate-45 block shadow-[0_0_15px_rgba(197,160,89,0.8)]"></span>
+<span class="mt-2 font-label-caps text-label-caps text-old-gold bg-graphite-deep/80 px-2 py-1 rounded">Bonito</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-old-gold/20">
+<div>
+<span class="font-display-lg text-headline-lg text-primary dark:text-primary mb-4 block">Origem MS</span>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface mb-6 opacity-70">
+                A curadoria definitiva do turismo e da alta gastronomia no coração do Brasil.
+            </p>
+<span class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-50">
+                © 2024 Origem MS. Território de Identidade.
+            </span>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Navegação</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/sobre">Nossa História</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/expedicoes">Expedições</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/a-rota">A Rota Bioceânica</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Informações</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/contato">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/privacidade">Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="/termos">Termos de Uso</a>
+</div>
+</footer>
+</body></html>
