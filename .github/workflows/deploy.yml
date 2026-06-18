@@ -77,9 +77,11 @@ jobs:
           cd "$DEPLOY_PATH"
 
           if [ ! -d .git ]; then
-            git clone "$REPOSITORY_URL" .
+            git init
+            git remote add origin "$REPOSITORY_URL"
           fi
 
+          git remote set-url origin "$REPOSITORY_URL"
           git fetch origin main
           git reset --hard origin/main
 
