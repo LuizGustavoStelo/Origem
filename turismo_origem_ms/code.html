@@ -159,9 +159,37 @@
                     </p>
 </div>
 </div>
+<div class="mb-14 border border-old-gold/20 bg-surface-container-lowest/70 p-5 md:p-6" data-origem-filter-form="turismo">
+<div class="grid grid-cols-1 md:grid-cols-[1.4fr_0.8fr_0.8fr_auto] gap-4 items-end">
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Buscar</span>
+<input class="bg-graphite-deep border-old-gold/30 text-paper-cream placeholder:text-on-surface-variant/60 focus:border-old-gold focus:ring-old-gold" data-filter-search="" placeholder="Destino, bioma ou experiência" type="search"/>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Experiência</span>
+<select class="bg-graphite-deep border-old-gold/30 text-paper-cream focus:border-old-gold focus:ring-old-gold" data-filter-category="">
+<option value="">Todas</option>
+<option value="fotografia">Fotografia</option>
+<option value="água">Águas naturais</option>
+<option value="observação">Observação</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Região</span>
+<select class="bg-graphite-deep border-old-gold/30 text-paper-cream focus:border-old-gold focus:ring-old-gold" data-filter-location="">
+<option value="">Todas</option>
+<option value="pantanal sul">Pantanal Sul</option>
+<option value="serra da bodoquena">Serra da Bodoquena</option>
+<option value="cerrado">Cerrado</option>
+</select>
+</label>
+<button class="h-[42px] border border-old-gold/40 px-5 font-label-caps text-label-caps uppercase tracking-widest text-old-gold hover:bg-old-gold hover:text-graphite-deep transition-colors" data-filter-clear="" type="button">Limpar</button>
+</div>
+<p class="mt-4 font-body-md text-sm text-on-surface-variant" data-filter-count="">Exibindo todas as atrações.</p>
+</div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Card 1 -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30" data-filter-card="" data-filter-category="fotografia observação" data-filter-location="pantanal sul" data-filter-text="safári fotográfico pantanal sul fauna onça observação">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a majestic jaguar resting on a tree branch in the Pantanal. The lighting is dramatic and moody, with dappled sunlight filtering through the dense canopy. The overall tone is dark, luxurious, and untamed, utilizing deep greens and graphite shadows, accented by the golden fur of the animal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALsKgYfd9OQMc49BEaebIJ6LT_uqgN0BvFvFnEc2Sk_QvTv-Z5QNc4rEK5iv4HlLNPHqdHRUPCklqJwnUiu8mfkbLUkfb22TIJOrbAwTjym_ZHWdsyBSBfIql_gwvhMznOoUDBKdG6IzxQ5x4eHN42eNPEFP0fLzTSC2SL2RH3aVpZHAHiRm97KQF7eilF4cNceUKJUqXXB8XkGPwhUm7SYH-B-rYP1wqm3TtllwuNO2XxyZyqHDCB5G0xadeGAlwZMtZAq2J-0WQ"/>
 <div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
 <div class="absolute bottom-0 left-0 w-full p-6">
@@ -170,7 +198,7 @@
 </div>
 </div>
 <!-- Card 2 -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30" data-filter-card="" data-filter-category="água natureza" data-filter-location="serra da bodoquena" data-filter-text="águas cristalinas serra da bodoquena rio nascente natureza">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A tranquil scene of a small, elegant wooden boat navigating a dark, reflective river in the Cerrado at dawn. Mist hangs over the water. The aesthetic is minimal and serene, featuring a moody palette of deep graphite, soft morning light, and subtle olive green tones of the riverbank foliage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBywk8jvD9qXvGhAwIusRtSaEKVl4JMcGbz_mju7c4Q0ZjbMWYhawLgfKGoAjy5gDzxAZy9bNtpb4qb0zvEt8Fo_WDBv8VJ7L56Ast-3Vb2NBWrI82-CCAJoiFI1EdAw4jfh9vvL6MDmvhPBuGl30qDAnX93fYINuhRK0tAVdgO9mUmt1kBdwzVmtoxs6es_Wnd30FKytCLgNnsCZlBlK54DSYhS4GCj7glW56WePvSvC7yErVXK2eyF98Xxi4143WerSY-KacywqA"/>
 <div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
 <div class="absolute bottom-0 left-0 w-full p-6">
@@ -179,7 +207,7 @@
 </div>
 </div>
 <!-- Card 3 -->
-<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30">
+<div class="group relative aspect-[3/4] overflow-hidden border border-old-gold/30" data-filter-card="" data-filter-category="observação fotografia" data-filter-location="cerrado" data-filter-text="birdwatching raro cerrado aves observação fotografia">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant, exotic bird perched on a twisted, ancient branch in the Cerrado. The background is a beautifully blurred, dark, moody forest. High contrast lighting highlights the brilliant plumage against the dark graphite and olive tones of the environment. The image evokes a sense of rare discovery and premium eco-tourism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFnNSdheEBn5MdtbeH9hbjEiDdyIT4ZYwpaBuEbWOQ4uP5b55qZWm1OjQZq7FJjjNtrkiIE62eqPa5gKUtde2LG125BduC--BuT64td4xVJep_skb12w0-nT_Bm7NSwP1PGdQ6PP0OQwGoyMoHhhI-jrtvUvltkb2r14KMNJFSs4cKu4OUklV7vYHNz8Fq9wvMhc4evqigKCtCqiHh5bDs9vS0iprN3OchL0Hxi5NdrOg-TxenhEv2oND_iRMjb8LVHUEsMFlWbA8"/>
 <div class="absolute inset-0 bg-gradient-to-t from-graphite-deep via-transparent to-transparent"></div>
 <div class="absolute bottom-0 left-0 w-full p-6">
@@ -188,6 +216,7 @@
 </div>
 </div>
 </div>
+<p class="hidden border border-old-gold/20 bg-surface-container-lowest p-8 text-center font-body-md text-on-surface-variant" data-filter-empty="">Nenhuma atração encontrada com os filtros selecionados.</p>
 </section>
 <!-- Hospitalidade Premium -->
 <section class="py-stack-xl bg-surface-container-low border-y border-old-gold/30">

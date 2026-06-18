@@ -311,6 +311,79 @@
     });
   }
 
+  function normalize(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
+
+  function installFilters() {
+    document.querySelectorAll("[data-origem-filter-form]").forEach((form) => {
+      const search = form.querySelector("[data-filter-search]");
+      const category = form.querySelector("[data-filter-category]");
+      const location = form.querySelector("[data-filter-location]");
+      const clear = form.querySelector("[data-filter-clear]");
+      const count = form.querySelector("[data-filter-count]");
+      const cards = Array.from(document.querySelectorAll("[data-filter-card]"));
+      const empty = document.querySelector("[data-filter-empty]");
+
+      if (!cards.length) {
+        return;
+      }
+
+      function cardMatches(card) {
+        const searchValue = normalize(search?.value);
+        const categoryValue = normalize(category?.value);
+        const locationValue = normalize(location?.value);
+        const text = normalize(card.dataset.filterText || card.textContent);
+        const cardCategory = normalize(card.dataset.filterCategory);
+        const cardLocation = normalize(card.dataset.filterLocation);
+
+        return (!searchValue || text.includes(searchValue))
+          && (!categoryValue || cardCategory.includes(categoryValue))
+          && (!locationValue || cardLocation.includes(locationValue));
+      }
+
+      function update() {
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const matched = cardMatches(card);
+          card.classList.toggle("hidden", !matched);
+          if (matched) {
+            visible += 1;
+          }
+        });
+
+        if (empty) {
+          empty.classList.toggle("hidden", visible !== 0);
+        }
+
+        if (count) {
+          count.textContent = visible === cards.length
+            ? `Exibindo todos os ${cards.length} itens.`
+            : `Exibindo ${visible} de ${cards.length} itens.`;
+        }
+      }
+
+      [search, category, location].forEach((control) => {
+        control?.addEventListener("input", update);
+        control?.addEventListener("change", update);
+      });
+
+      clear?.addEventListener("click", () => {
+        if (search) search.value = "";
+        if (category) category.value = "";
+        if (location) location.value = "";
+        update();
+      });
+
+      update();
+    });
+  }
+
   function installLayout() {
     injectStyles();
     removeLegacyLayout();
@@ -323,6 +396,7 @@
     document.body.prepend(header);
     document.body.append(footer);
     bindMobileMenu(header, panel);
+    installFilters();
   }
 
   if (document.readyState === "loading") {

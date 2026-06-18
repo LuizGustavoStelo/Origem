@@ -111,10 +111,10 @@
             font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
         html { scroll-behavior: smooth; }
-        body { background-color: theme('colors.background'); color: theme('colors.on-surface'); }
+        body { background-color: #131314; color: #e5e2e3; }
     </style>
 </head>
-<body class="antialiased selection:bg-old-gold selection:text-background">
+<body class="bg-background text-on-surface antialiased selection:bg-old-gold selection:text-background">
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter md:px-margin-desktop py-4 bg-surface/90 backdrop-blur-md border-b border-old-gold/30">
 <div class="flex items-center gap-4">
 <a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary uppercase tracking-tighter hover:opacity-80 transition-opacity" href="/">Origem MS</a>
@@ -134,7 +134,7 @@
 </button>
 </div>
 </nav>
-<main>
+<main class="bg-background text-on-surface">
 <header class="relative w-full h-screen min-h-[800px] flex items-end pb-margin-mobile md:pb-margin-desktop px-margin-mobile md:px-margin-desktop overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="bg-cover bg-center w-full h-full" data-alt="A sweeping aerial wide shot of a modern, minimalist suspension bridge crossing the vast Paraguay river at dusk. The landscape is the raw, untamed Pantanal, blending into the Cerrado biome. The lighting is cinematic, deep, and moody, with high contrast between the dark graphite shadows of the water and the glowing old-gold sunset reflecting off the sleek concrete and steel of the bridge. The aesthetic is ultra-premium travel editorial, emphasizing the juxtaposition of human engineering and raw territorial authenticity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArU6tJMttQZWfJW0ng4IE030Gf6LLW7GbiVHoSi1nwS1ZtsTlLl4MFytUV_O4iYJkdCCawttIMw5WTZLAf6cR0_aM6viYp3v9WZXiodXe2AMt9MNvWo9ICbYJe0Vc5F2dNQdQO6ujLoLZc8tE8cD2cOZYucAyfTB-u6XMjP62Imp2nj90UlJr5HuwXV3mySJ9Ot425W7fv0L46VMj_V7cwpYTAxPoZ7SN9BKc06Py2J_hGgUVa0uYaJxHDq3pu5FOjBjdw-ge0St0')"></div>
@@ -148,7 +148,7 @@
 </div>
 </div>
 </header>
-<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-background">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
 <div class="md:col-span-5 sticky top-32">
 <h2 class="font-headline-lg text-headline-lg text-primary border-l-2 border-clay-terracotta pl-6">A Rota<br/>Bioceânica</h2>
@@ -204,14 +204,14 @@
 </div>
 </div>
 </section>
-<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-old-gold/20">
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-old-gold/20 bg-background">
 <div class="text-center mb-24 max-w-3xl mx-auto">
 <span class="font-label-caps text-label-caps text-clay-terracotta uppercase tracking-widest block mb-4">Análise</span>
 <h2 class="font-headline-lg text-headline-lg text-primary">Impacto e Legado</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
 <div class="hidden md:block absolute top-8 left-0 w-full h-[1px] bg-old-gold/20 -z-10"></div>
-<div class="flex flex-col bg-background pt-8 relative">
+<div class="flex flex-col bg-surface-container-low p-8 border border-old-gold/10 relative">
 <div class="w-4 h-4 bg-clay-terracotta rotate-45 absolute top-[-8px] left-8 border border-background"></div>
 <span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="public">public</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Integração Cultural</h3>
@@ -219,7 +219,7 @@
                         A fluidez das fronteiras fomentará um intercâmbio sem precedentes de saberes, gastronomia e tradições entre os povos andinos e os pantaneiros.
                     </p>
 </div>
-<div class="flex flex-col bg-background pt-8 relative">
+<div class="flex flex-col bg-surface-container-low p-8 border border-old-gold/10 relative">
 <div class="w-4 h-4 bg-old-gold rotate-45 absolute top-[-8px] left-8 border border-background"></div>
 <span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="storefront">storefront</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Evolução Comercial</h3>
@@ -227,7 +227,7 @@
                         Redução dramática no tempo e custo de exportação para a Ásia, transformando Mato Grosso do Sul em um hub logístico de importância global.
                     </p>
 </div>
-<div class="flex flex-col bg-background pt-8 relative">
+<div class="flex flex-col bg-surface-container-low p-8 border border-old-gold/10 relative">
 <div class="w-4 h-4 bg-olive-closed rotate-45 absolute top-[-8px] left-8 border border-background"></div>
 <span class="material-symbols-outlined text-4xl text-old-gold mb-6" data-icon="nature">nature</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Responsabilidade Territorial</h3>

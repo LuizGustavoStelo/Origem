@@ -165,12 +165,38 @@
 <h2 class="font-display-lg text-headline-lg md:text-display-lg text-paper-cream mb-4">Experiências Recomendadas</h2>
 <div class="w-16 h-[1px] bg-old-gold mx-auto opacity-50"></div>
 </div>
+<div class="mb-14 border border-old-gold/20 bg-surface-container-lowest/70 p-5 md:p-6" data-origem-filter-form="gastronomia">
+<div class="grid grid-cols-1 md:grid-cols-[1.4fr_0.8fr_0.8fr_auto] gap-4 items-end">
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Buscar</span>
+<input class="bg-graphite-deep border-old-gold/30 text-paper-cream placeholder:text-on-surface-variant/60 focus:border-old-gold focus:ring-old-gold" data-filter-search="" placeholder="Nome, ingrediente ou experiência" type="search"/>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Categoria</span>
+<select class="bg-graphite-deep border-old-gold/30 text-paper-cream focus:border-old-gold focus:ring-old-gold" data-filter-category="">
+<option value="">Todas</option>
+<option value="alta gastronomia">Alta gastronomia</option>
+<option value="peixes">Peixes regionais</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-old-gold uppercase tracking-widest">Cidade</span>
+<select class="bg-graphite-deep border-old-gold/30 text-paper-cream focus:border-old-gold focus:ring-old-gold" data-filter-location="">
+<option value="">Todas</option>
+<option value="campo grande">Campo Grande</option>
+<option value="bonito">Bonito</option>
+</select>
+</label>
+<button class="h-[42px] border border-old-gold/40 px-5 font-label-caps text-label-caps uppercase tracking-widest text-old-gold hover:bg-old-gold hover:text-graphite-deep transition-colors" data-filter-clear="" type="button">Limpar</button>
+</div>
+<p class="mt-4 font-body-md text-sm text-on-surface-variant" data-filter-count="">Exibindo todas as experiências.</p>
+</div>
 <!-- Category: Contemporânea -->
 <div class="mb-20">
 <h3 class="font-headline-md text-headline-md text-old-gold mb-8 border-b border-old-gold/20 pb-4">Alta Gastronomia &amp; Contemporânea</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
-<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden">
+<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden" data-filter-card="" data-filter-category="alta gastronomia" data-filter-location="campo grande" data-filter-text="origem bistrô campo grande alta gastronomia contemporânea cerrado pantanal">
 <div class="absolute top-4 right-4 z-20">
 <img alt="Seal" class="w-12 h-12 object-contain drop-shadow-md" src="https://lh3.googleusercontent.com/aida/AP1WRLuZJ0vdr7pzImYnIRlbio-SxhpL1c7lZaCYtD8bSBKUeyhcFsXXfhLlitWvk6rGp-JfbDFUdF4NavJfloUzL88Ts4zf2NK7lyAWV4pzQDUdb1xlZdiY8_xEQJE0_ThIKJb02wMd7-Wp69d2NP3rFP8Ehs2SrCXhpnq7fZGJ45F5Sxs4Xrp3MKF_GCN3Hi-Lurfp9s3aSuXocc8tgVi2VSqwih_yPPrPdgv9QMKgdbr4jh8hrcaKWKfXwMc"/>
 </div>
@@ -188,7 +214,7 @@
 </div>
 </div>
 <!-- Card 2 -->
-<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden">
+<div class="group relative bg-surface-container-low border border-old-gold/10 hover:border-old-gold/30 transition-all duration-500 overflow-hidden" data-filter-card="" data-filter-category="peixes alta gastronomia" data-filter-location="bonito" data-filter-text="casa do joão bonito peixes regionais alta gastronomia bacia do prata">
 <div class="absolute top-4 right-4 z-20">
 <img alt="Seal" class="w-12 h-12 object-contain drop-shadow-md" src="https://lh3.googleusercontent.com/aida/AP1WRLuZJ0vdr7pzImYnIRlbio-SxhpL1c7lZaCYtD8bSBKUeyhcFsXXfhLlitWvk6rGp-JfbDFUdF4NavJfloUzL88Ts4zf2NK7lyAWV4pzQDUdb1xlZdiY8_xEQJE0_ThIKJb02wMd7-Wp69d2NP3rFP8Ehs2SrCXhpnq7fZGJ45F5Sxs4Xrp3MKF_GCN3Hi-Lurfp9s3aSuXocc8tgVi2VSqwih_yPPrPdgv9QMKgdbr4jh8hrcaKWKfXwMc"/>
 </div>
@@ -207,6 +233,7 @@
 </div>
 </div>
 </div>
+<p class="hidden border border-old-gold/20 bg-surface-container-lowest p-8 text-center font-body-md text-on-surface-variant" data-filter-empty="">Nenhuma experiência encontrada com os filtros selecionados.</p>
 <!-- Ingredientes Nativos Gallery -->
 <div class="mt-stack-xl">
 <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 border-b border-old-gold/20 pb-4">
