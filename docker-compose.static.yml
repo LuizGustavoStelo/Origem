@@ -21,13 +21,13 @@ x-web-common: &web-common
 services:
   web-a:
     <<: *web-common
-    container_name: origem-static-web-a
+    container_name: origem-web-1
     ports:
       - "127.0.0.1:${WEB_A_PORT:-3001}:3000"
 
   web-b:
     <<: *web-common
-    container_name: origem-static-web-b
+    container_name: origem-web-2
     ports:
       - "127.0.0.1:${WEB_B_PORT:-3002}:3000"
 
