@@ -15,8 +15,8 @@ DNS: origemms.com.br
   v
 Nginx host-level
   |
-  +-- 127.0.0.1:3001 -> web-a
-  +-- 127.0.0.1:3002 -> web-b
+  +-- 127.0.0.1:3004 -> web-a
+  +-- 127.0.0.1:3005 -> web-b
                     |
                     +-- PostgreSQL
                     +-- Redis

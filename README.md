@@ -22,8 +22,8 @@ Internet
   v
 Nginx na VPS
   |
-  +--> origem-web-a:3001
-  +--> origem-web-b:3002
+  +--> origem-web-a:3004
+  +--> origem-web-b:3005
           |
           +--> PostgreSQL
           +--> Redis
@@ -80,12 +80,12 @@ sudo chown -R "$USER":"$USER" /var/www/Origem
 cd /var/www/Origem
 cat > .env <<'EOF'
 NODE_ENV=production
-WEB_A_PORT=3001
-WEB_B_PORT=3002
+WEB_A_PORT=3004
+WEB_B_PORT=3005
 EOF
 ```
 
-Configure o Nginx usando [infra/nginx/origemms.com.br.conf](infra/nginx/origemms.com.br.conf), apontando para `127.0.0.1:3001` e `127.0.0.1:3002`.
+Configure o Nginx usando [infra/nginx/origemms.com.br.conf](infra/nginx/origemms.com.br.conf), apontando para `127.0.0.1:3004` e `127.0.0.1:3005`.
 
 Depois, configure no GitHub os secrets:
 
@@ -117,9 +117,9 @@ docker compose up -d --build
 
 Acesse:
 
-- `http://localhost:3001`
-- `http://localhost:3002`
-- `http://localhost:3001/healthz`
+- `http://localhost:3004`
+- `http://localhost:3005`
+- `http://localhost:3004/healthz`
 
 Para rodar sem Docker:
 
@@ -133,8 +133,8 @@ O arquivo de exemplo está em [infra/nginx/origemms.com.br.conf](infra/nginx/ori
 
 Na VPS, depois de subir os containers, o Nginx deve apontar para:
 
-- `127.0.0.1:3001`
-- `127.0.0.1:3002`
+- `127.0.0.1:3004`
+- `127.0.0.1:3005`
 
 Comandos esperados na VPS:
 
