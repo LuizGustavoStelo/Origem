@@ -1,14 +1,17 @@
 # Origem MS
 
-Origem MS é uma plataforma de curadoria premium para gastronomia, cultura e turismo no Mato Grosso do Sul. O projeto começa com uma landing page editorial e evolui para um marketplace SaaS multiestado, com assinatura mensal de estabelecimentos, painel administrativo, métricas de visitação e faturamento.
+Origem MS é um guia editorial para viajantes que querem descobrir Mato Grosso do Sul e planejar suas próprias paradas. Restaurantes são o principal público comercial; hotéis e outros estabelecimentos também poderão publicar informações e cardápios quando essa área for lançada.
+
+O site estático atual não recebe cadastro comercial, não mantém um catálogo de negócios e não oferece envio de cardápios, reservas ou criação automática de roteiros. A página `/estabelecimentos` explica a proposta sem apresentar essas funções como ativas.
 
 ## Estado Atual
 
 - Landing page e páginas editoriais servidas por container Docker.
-- Rotas públicas funcionais: `/`, `/gastronomia`, `/cultura`, `/turismo`, `/a-rota`.
-- Rotas provisórias para conteúdo futuro: `/sobre`, `/expedicoes`, `/contato`, `/privacidade`, `/termos`, `/admin`.
+- Rotas públicas funcionais: `/`, `/gastronomia`, `/cultura`, `/turismo`, `/a-rota`, `/estabelecimentos` e `/contato`.
+- Rotas provisórias para conteúdo futuro: `/sobre`, `/expedicoes`, `/privacidade`, `/termos` e `/admin`.
+- Contato público: [contato@origemms.com.br](mailto:contato@origemms.com.br).
 - Infraestrutura estática inicial com dois containers web balanceáveis pelo Nginx externo.
-- Header e footer unificados em [assets/origem-layout.js](assets/origem-layout.js).
+- Estilos compartilhados em [assets/origem.css](assets/origem.css); [assets/origem-layout.js](assets/origem-layout.js) controla o menu móvel e os filtros de histórias da página inicial.
 - PostgreSQL e Redis já estão planejados em [docker-compose.yml](docker-compose.yml), mas o deploy atual usa [docker-compose.static.yml](docker-compose.static.yml).
 - Deploy automatizado por GitHub Actions para a VPS `147.15.31.73`, no diretório `/var/www/Origem`.
 
@@ -52,14 +55,14 @@ A aplicação deve resolver o tenant pelo `Host` recebido no Nginx. No banco, a 
 
 O permissionamento deve ser RBAC, com validação no backend e nunca apenas na interface.
 
-## Módulos Planejados
+## Produto Comercial em Planejamento
 
-- Catálogo público de estabelecimentos.
-- Página de cada estabelecimento com fotos, descrição, localização, horários, categorias e selo de curadoria.
+- Catálogo público, ainda não disponível, com restaurantes em primeiro plano e também hotéis e outros estabelecimentos.
+- Página de cada estabelecimento com fotos, descrição, localização, horários, categorias, formas de contato e cardápios fornecidos pelo negócio.
 - Painel do estabelecimento com visitas, gráficos, faturas e dados cadastrais.
 - Painel administrativo estadual para aprovar, editar e acompanhar estabelecimentos.
 - Painel superadmin para alternar entre estados, ver faturamento consolidado e gerenciar admins.
-- Assinaturas mensais, inicialmente com plano de referência de R$ 100/mês.
+- Planos e preços comerciais ainda não definidos.
 - Relatórios de MRR, inadimplência, visitas, conversão e crescimento por tenant.
 
 ## Publicação Inicial Somente Estática

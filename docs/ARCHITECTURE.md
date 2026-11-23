@@ -1,10 +1,12 @@
 # Arquitetura Origem MS
 
-## Objetivo
+## Estado atual e objetivo futuro
 
-Criar uma plataforma multi-tenant de alto tráfego para listar estabelecimentos, vender assinaturas mensais e entregar painéis administrativos por estado, mantendo o Nginx fora dos containers.
+O site público atual é uma publicação estática Node.js, sem banco, catálogo comercial, cadastro de estabelecimentos, envio de cardápios, reservas ou assinaturas ativas. Restaurantes são o principal público comercial previsto; hotéis e outros negócios locais também poderão participar.
 
-## Topologia Inicial
+Este documento descreve uma arquitetura proposta para uma fase futura, quando houver um produto comercial definido. A topologia abaixo não deve ser interpretada como funcionalidade já implantada.
+
+## Topologia proposta
 
 ```text
 Usuário

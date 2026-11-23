@@ -9,6 +9,7 @@ COPY assets ./assets
 COPY a_rota_origem_ms ./a_rota_origem_ms
 COPY cultura_origem_ms ./cultura_origem_ms
 COPY gastronomia_origem_ms ./gastronomia_origem_ms
+COPY estabelecimentos_origem_ms ./estabelecimentos_origem_ms
 COPY home ./home
 COPY turismo_origem_ms ./turismo_origem_ms
 

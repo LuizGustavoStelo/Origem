@@ -12,17 +12,18 @@ const pages = new Map([
   ["/cultura", "cultura_origem_ms/code.html"],
   ["/turismo", "turismo_origem_ms/code.html"],
   ["/a-rota", "a_rota_origem_ms/code.html"],
+  ["/estabelecimentos", "estabelecimentos_origem_ms/code.html"],
 ]);
 
 const globalLayoutScript = '<script src="/assets/origem-layout.js" defer></script>';
 
 const placeholders = new Map([
-  ["/sobre", ["Nossa História", "Em breve, a história editorial da Origem MS e sua curadoria territorial."]],
-  ["/expedicoes", ["Expedições", "Em breve, roteiros e experiências conectadas à Rota Bioceânica."]],
-  ["/contato", ["Contato", "Em breve, formulário comercial para estabelecimentos, marcas e parceiros."]],
-  ["/privacidade", ["Privacidade", "Em breve, política de privacidade e tratamento de dados pessoais."]],
-  ["/termos", ["Termos de Uso", "Em breve, termos de uso da plataforma Origem MS."]],
-  ["/admin", ["Painel Administrativo", "Área reservada para superadmin, admins estaduais e usuários de estabelecimentos."]],
+  ["/sobre", ["Nossa história", "A história editorial da Origem MS está em preparação."]],
+  ["/expedicoes", ["Expedições", "Roteiros e experiências conectadas à Rota Bioceânica estão em preparação."]],
+  ["/contato", ["Contato", "Para conversar com a equipe da Origem MS, escreva para contato@origemms.com.br."]],
+  ["/privacidade", ["Privacidade", "A política de privacidade e o tratamento de dados pessoais serão publicados antes da abertura do cadastro."]],
+  ["/termos", ["Termos de uso", "Os termos de uso da plataforma Origem MS serão publicados antes da abertura do cadastro."]],
+  ["/admin", ["Painel administrativo", "Esta área ainda não está disponível ao público."]],
 ]);
 
 function normalizePath(pathname) {
@@ -52,7 +53,7 @@ function tenantFromHost(host = "") {
   return "desconhecido";
 }
 
-function htmlShell(title, description, statusCode = 200) {
+function htmlShell(title, description, statusCode = 200, extraContent = "") {
   return {
     statusCode,
     headers: {
@@ -60,28 +61,35 @@ function htmlShell(title, description, statusCode = 200) {
       "cache-control": "no-store",
     },
     body: `<!doctype html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f3ee">
   <title>${title} | Origem MS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/origem.css">
   ${globalLayoutScript}
 </head>
-<body class="min-h-screen bg-[#131314] text-[#e5e2e3] antialiased">
-  <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6">
-    <a href="/" class="mb-10 text-sm uppercase tracking-[0.2em] text-[#C5A059]">Origem MS</a>
-    <h1 class="font-['EB_Garamond'] text-5xl text-[#F4F1EA]">${title}</h1>
-    <p class="mt-6 font-['Inter'] text-lg leading-8 text-[#d1c5b4]">${description}</p>
-    <nav class="mt-10 flex flex-wrap gap-4 font-['Inter'] text-sm text-[#C5A059]">
-      <a href="/gastronomia">Gastronomia</a>
-      <a href="/cultura">Cultura</a>
-      <a href="/turismo">Turismo</a>
-      <a href="/a-rota">A Rota</a>
-    </nav>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Origem MS, início"><span>Origem</span><span class="wordmark__state">MS</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="primary-navigation" aria-expanded="false"><span>Menu</span><svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+        <a href="/gastronomia">Gastronomia</a><a href="/turismo">Lugares</a><a href="/cultura">Cultura</a><a href="/a-rota">Rota Bioceânica</a><a class="nav-business" href="/estabelecimentos">Para estabelecimentos</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="business-details">
+      <div class="business-details__intro">
+        <h1>${title}</h1>
+        <p>${description}</p>
+        ${extraContent}
+        <a class="text-link" href="/"><span>Voltar ao início</span></a>
+      </div>
+    </section>
   </main>
 </body>
 </html>`,
@@ -111,23 +119,30 @@ async function renderPage(routePath) {
 }
 
 async function renderStaticAsset(routePath) {
-  const safePath = path.normalize(routePath).replace(/^(\.\.[/\\])+/, "");
-  const file = path.join(ROOT, safePath);
+  if (!routePath.startsWith("/assets/")) {
+    return null;
+  }
 
-  if (!file.startsWith(ROOT)) {
+  const assetRoot = path.resolve(ROOT, "assets");
+  const file = path.resolve(ROOT, routePath.slice(1));
+  const relativePath = path.relative(assetRoot, file);
+
+  if (!relativePath || relativePath.startsWith("..") || path.isAbsolute(relativePath)) {
     return null;
   }
 
   try {
     const extension = path.extname(file).toLowerCase();
     const contentTypes = new Map([
+      [".css", "text/css; charset=utf-8"],
       [".png", "image/png"],
       [".jpg", "image/jpeg"],
       [".jpeg", "image/jpeg"],
       [".webp", "image/webp"],
-      [".svg", "image/svg+xml"],
+      [".svg", "image/svg+xml; charset=utf-8"],
       [".ico", "image/x-icon"],
       [".js", "application/javascript; charset=utf-8"],
+      [".woff2", "font/woff2"],
     ]);
     const contentType = contentTypes.get(extension);
 
@@ -141,7 +156,8 @@ async function renderStaticAsset(routePath) {
       statusCode: 200,
       headers: {
         "content-type": contentType,
-        "cache-control": "public, max-age=31536000, immutable",
+        "cache-control": "public, max-age=300",
+        "x-content-type-options": "nosniff",
       },
       body,
     };
@@ -167,7 +183,10 @@ const server = http.createServer(async (request, response) => {
     const page = await renderPage(routePath);
     const placeholder = placeholders.get(routePath);
     const asset = !page && !placeholder ? await renderStaticAsset(routePath) : null;
-    const result = page || asset || (placeholder ? htmlShell(placeholder[0], placeholder[1]) : htmlShell("Página não encontrada", "O conteúdo solicitado ainda não existe.", 404));
+    const contactLink = routePath === "/contato"
+      ? `<p><a class="text-link" href="mailto:contato@origemms.com.br"><span>contato@origemms.com.br</span></a></p>`
+      : "";
+    const result = page || asset || (placeholder ? htmlShell(placeholder[0], placeholder[1], 200, contactLink) : htmlShell("Página não encontrada", "O conteúdo solicitado ainda não está disponível.", 404));
 
     response.writeHead(result.statusCode, result.headers);
     response.end(result.body);
