@@ -25,6 +25,46 @@
     });
   });
 
+  const revealTargets = document.querySelectorAll([
+    ".story-mosaic > .story > figure, .story-mosaic > .story > h3, .story-mosaic > .story > .story__link",
+    ".food-notebook > .section-heading, .food-entry--text .food-entry__copy",
+    ".territory-spread > .media-bleed, .territory-spread > .territory-spread__copy",
+    ".food-entry:not(.food-entry--text) > figure, .food-entry:not(.food-entry--text) > .food-entry__copy",
+    ".directory-note > *",
+    ".destination > figure, .destination > div",
+    ".nature-essay > figure, .nature-essay > div",
+    ".culture-story > figure, .culture-story > .culture-story__copy",
+    ".city-culture__figures > figure",
+    ".city-culture > .section-heading, .city-culture > .section-tail, .culture-note > div",
+    ".route-status > div",
+    ".route-itinerary > .route-country",
+    ".route-branches > .route-branch",
+    ".route-ports > *",
+    ".split-feature > *",
+    ".business-details__intro, .business-list > div",
+    ".site-footer__content",
+  ].join(","));
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (revealTargets.length && !reduceMotion && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        activeObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -7% 0px", threshold: 0.08 });
+
+    document.documentElement.classList.add("has-scroll-reveal");
+    revealTargets.forEach((target) => {
+      target.dataset.reveal = "";
+      if (target.matches(".story > h3, .story__link, .food-entry__copy, .territory-spread__copy, .directory-note__copy, .destination > div, .nature-essay > div, .culture-story__copy, .city-culture > .section-heading, .city-culture > .section-tail, .culture-note > div, .route-status > div, .split-feature__copy")) {
+        target.dataset.revealDelay = "short";
+      }
+      observer.observe(target);
+    });
+  }
+
   const filterButtons = [...document.querySelectorAll("[data-filter]")];
   const stories = [...document.querySelectorAll("[data-story]")];
   const storyList = document.getElementById("story-list");

@@ -5,7 +5,7 @@ As fotografias locais são arquivos de referência, não imagens geradas. As leg
 | Arquivo | Conteúdo e crédito | Fonte / licença |
 | --- | --- | --- |
 | `crystal-clear-waters.jpg` | Flutuação com snorkel no Rio da Prata, Bonito. Daniel Francisco Madrigal Möller. | [Wikimedia Commons, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Crystal_Clear_Waters.JPG) |
-| `cooked-pequi.jpg` | Pequi maduro. Melsj. | [Wikimedia Commons, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Cooked_pequi.jpg) |
+| `pequi-na-palma.jpg` | Pequi aberto na palma da mão, em Luziânia (GO). Arley da Cruz. | [Wikimedia Commons, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Pequi_na_palma_da_minha_m%C3%A3o.jpg) |
 | `guavira.jpg` | Frutos de guavira. Tito Lahaye. | [Wikimedia Commons, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Guavira.JPG) |
 | `sopa-paraguaia-e-chipa.jpg` | Sopa paraguaia e chipa. MTur Destinos. | [Wikimedia Commons, domínio público](https://commons.wikimedia.org/wiki/File:Sopa_Paraguaia_e_Chipa.jpg) |
 | `rio-negro-pantanal.jpg` | Rio Negro, no Pantanal. Charles J. Sharp. | [Wikimedia Commons, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Rio_Negro,_The_Pantanal,_Mato_Grosso_do_Sul,_Brazil.jpg) |

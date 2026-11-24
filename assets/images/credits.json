@@ -24,30 +24,6 @@
         "saved":  "2026-11-23T18:25:03.233Z"
     },
     {
-        "file":  "assets/images/cooked-pequi.jpg",
-        "media":  "image",
-        "ref":  "commons:86920500",
-        "title":  "Cooked pequi",
-        "creator":  "Melsj",
-        "creatorUrl":  null,
-        "date":  "2020-02-11",
-        "license":  "CC BY-SA 4.0",
-        "licenseCode":  "by-sa",
-        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
-        "creditRequired":  true,
-        "page":  "https://commons.wikimedia.org/wiki/File:Cooked_pequi.jpg",
-        "via":  "Wikimedia Commons",
-        "image":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Cooked_pequi.jpg/1920px-Cooked_pequi.jpg",
-        "width":  1920,
-        "height":  1437,
-        "bytes":  291013,
-        "credit":  "\"Cooked pequi\" by Melsj, CC BY-SA 4.0, via Wikimedia Commons",
-        "notes":  [
-                      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
-                  ],
-        "saved":  "2026-11-23T18:31:33.357Z"
-    },
-    {
         "file":  "assets/images/guavira.jpg",
         "media":  "image",
         "ref":  "commons:12176409",
@@ -244,5 +220,29 @@
                       "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
                   ],
         "saved":  "2026-11-23T19:59:14.920Z"
+    },
+    {
+        "file":  "assets/images/pequi-na-palma.jpg",
+        "media":  "image",
+        "ref":  "commons:131395279",
+        "title":  "Pequi na palma da minha mão",
+        "creator":  "Arley da Cruz",
+        "creatorUrl":  null,
+        "date":  "2019-12-19",
+        "license":  "CC BY-SA 4.0",
+        "licenseCode":  "by-sa",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "creditRequired":  true,
+        "page":  "https://commons.wikimedia.org/wiki/File:Pequi_na_palma_da_minha_m%C3%A3o.jpg",
+        "via":  "Wikimedia Commons",
+        "image":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Pequi_na_palma_da_minha_m%C3%A3o.jpg/1920px-Pequi_na_palma_da_minha_m%C3%A3o.jpg",
+        "width":  1920,
+        "height":  1440,
+        "bytes":  889961,
+        "credit":  "\"Pequi na palma da minha mão\" by Arley da Cruz, CC BY-SA 4.0, via Wikimedia Commons",
+        "notes":  [
+                      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+                  ],
+        "saved":  "2026-11-24T11:52:39.436Z"
     }
 ]
